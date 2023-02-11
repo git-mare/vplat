@@ -1,6 +1,14 @@
 # VPLAT
 
-<h4> Um sistema simples de upload de vídeos com título e descrição. Feito em NodeJS.</h4>
+<h4> Um sistema simples de upload de vídeos. Feito em NodeJS.</h4>
+<h3> Descrição </h3>
+<ul>
+  <li> Página inicial contendo os vídeos publicados (se houver) com título e número de visualizações da página </li>
+  <li> 
+    Página de vídeos contendo player, título, data de postagem, número de visualizações, descrição, botão para copiar link do vídeo e menu lateral listando os últimos vídeos publicados
+  </li>
+  <li> Página de uploads contendo um formulário com título, descrição e área para adicionar e pré visualizar o vídeo inserido. </li>
+</ul>
 
 <h3> Antes de iniciar o servidor </h3>
 <ul>
