@@ -14,13 +14,13 @@
 </ul>
 <h4> Certifique-se de instalar as bibliotecas NPM abaixo: </h4>
 <ul>
-  <li> <a href="https://www.npmjs.com/package/express"> express </a> </li>
+  <li> <a href="https://www.npmjs.com/package/express"> Express </a> </li>
   <li> <a href="https://www.npmjs.com/package/ejs"> EJS </a> </li>
   <li> <a href="https://www.npmjs.com/package/sequelize"> Sequelize </a> (será necessário instalar a biblioteca <a href="https://www.npmjs.com/package/mysql2"> mysql2 </a> para uso) </li>
-  <li> <a href="https://www.npmjs.com/package/body-parser"> body-parser </a> </li>
-  <li> <a href="https://www.npmjs.com/package/express-session"> express-session </a> </li>
-  <li> <a href="https://www.npmjs.com/package/connect-flash"> connect-flash </a> </li>
-  <li> <a href="https://www.npmjs.com/package/multer"> multer </a> </li>
+  <li> <a href="https://www.npmjs.com/package/body-parser"> Body-parser </a> </li>
+  <li> <a href="https://www.npmjs.com/package/express-session"> Express-session </a> </li>
+  <li> <a href="https://www.npmjs.com/package/connect-flash"> Connect-flash </a> </li>
+  <li> <a href="https://www.npmjs.com/package/multer"> Multer </a> </li>
 </ul>
 
 <h3> Prints </h3>
