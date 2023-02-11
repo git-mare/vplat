@@ -1,0 +1,82 @@
+/* CSS para a rota "/" */
+
+
+/* Grid Home */
+
+.homeArea {
+    display: grid;
+    grid-template-areas: "header header" "alerts alerts" "main main";
+    grid-gap: 1vh;
+    grid-template-columns: 30vh 184vh 85vw;
+    grid-template-rows: 11vh 8vh 88vh;
+}
+
+.screenArea {
+    grid-area: main;
+    background-color: #212121;
+    padding: 1rem;
+    overflow: scroll;
+    color: #ffffff;
+}
+
+.contentArea {
+    display: inline-block;
+    margin: 10px;
+    width: 22%;
+    height: 45%;
+    position: relative;
+    color: #fff;
+}
+
+
+/* Alertas */
+
+.homeAlerts {
+    grid-area: alerts;
+    padding: 3vh;
+    color: #ffffff;
+    background-color: #212121;
+}
+
+
+/* Vídeos */
+
+.informationsHome {
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #111111;
+}
+
+.thumbnailHome {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 70%;
+}
+
+.titleHome {
+    font-size: 2.5vh;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 32px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.viewsHome {
+    font-size: 1.9vh;
+    text-align: right;
+    word-wrap: break-word;
+}
+
+.informationsHome:hover,
+.thumbnailHome:hover {
+    transition-duration: 0.3s;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+}

@@ -1,0 +1,17 @@
+<%watch.forEach(data => {%>
+    <a href="/watch/<%=data.id%>">
+        <div class="contentArea">
+            <img src="img/banner-purple.png" class="thumbnailHome">
+            <div class="informationsHome">
+                <div class="titleHome">
+                    <%=data.title%>
+                </div>
+                <div class="viewsHome">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <%=data.views%> visualizações
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <%})%>

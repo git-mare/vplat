@@ -1,0 +1,41 @@
+<%- include("partials/header")%>
+
+    <body>
+        <form method="POST" action="/newVideo" enctype="multipart/form-data">
+            <div class="homeArea">
+
+                <%- include("partials/navbar") %>
+                    <div class="screenArea">
+                        <div class="uploadArea">
+                            <!-- Título -->
+                            <div class="formsTitle">
+                                <input type="text" name="title" minlength="2" maxlength="100" placeholder="Título do vídeo" required>
+                            </div>
+
+                            <!-- Descrição -->
+                            <div class="formsDescription">
+                                <textarea name="description" minlength="2" maxlength="300" class="textArea" placeholder="Descrição do vídeo" required></textarea>
+                            </div>
+
+                            <!-- Vídeo -->
+                            <div class="videoUpload">
+                                <label for="videoInp" id="selectVideo" class="button gray"> Selecionar vídeo para upload</label>
+                                <input accept="video/mp4" type="file" name="video" id="videoInp">
+                                <br>
+                                <video id="videoPreview" type="video/mp4" controls="controls" alt="Nenhum vídeo selecionado."></video>
+                            </div>
+
+                            <!-- Enviar formulário -->
+                            <div class="formsUpload">
+                                <input type="submit" value="Enviar vídeo">
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+
+        </form>
+        <script src="js/scripts.js"></script>
+    </body>
+
+    </html>

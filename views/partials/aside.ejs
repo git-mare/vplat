@@ -1,0 +1,17 @@
+<aside class="o-aside">
+    <% suggest.forEach(data => { %>
+        <a href="/watch/<%-data.id%>">
+            <div class="videoSuggestions">
+                <img src="../img/banner-purple.png" class="thumbnail">
+                <div class="videoTitle">
+                    <%=data.title%>
+                </div>
+                <div class="videoViews">
+                    <%=data.views%> visualizações</div>
+                <div class="videoDate">
+                    <%=data.createdAt%>
+                </div>
+            </div>
+        </a>
+        <% }) %>
+</aside>

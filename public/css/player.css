@@ -1,0 +1,163 @@
+/* CSS para a rota /watch */
+
+
+/* Player Grid */
+
+.playerArea {
+    display: grid;
+    grid-template-areas: "header header header" "main main aside" "title title aside" "desc desc aside";
+    grid-gap: 1vh;
+    grid-template-columns: 30vh 101vh 81vh 80vh;
+    grid-template-rows: 11vh 74vh 15vh 15vh;
+}
+
+.o-header {
+    grid-area: header;
+    padding: 1.2rem;
+}
+
+.o-aside {
+    grid-area: aside;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.o-main {
+    grid-area: main;
+}
+
+.o-video-info {
+    grid-area: title;
+    padding: 1rem;
+}
+
+.o-video-description {
+    grid-area: desc;
+}
+
+.o-aside,
+.o-aside a {
+    background-color: #373737;
+    color: #FDFDFD;
+}
+
+.o-header,
+.o-video-info,
+.o-video-description {
+    background: #212121;
+    color: #FDFDFD;
+}
+
+
+/* Elementos de Header */
+
+.header-element {
+    padding: 2.5vh;
+    font-size: 2.5vh;
+    color: #f8f7f7;
+}
+
+.header-element:hover {
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #383838;
+}
+
+
+/* Elementos de Main */
+
+.main-element {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Elementos de Video-Info */
+
+.video-title {
+    font-size: 2.5vh;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.video-informations {
+    font-size: 1.5vh;
+}
+
+
+/* Elemento de Video-Desc */
+
+.video-desc {
+    text-align: justify;
+    font-size: 2vh;
+    padding: 10px;
+}
+
+.copyButton {
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 3vh;
+    color: #ffffff;
+}
+
+#showMessage {
+    font-size: 2vh;
+    text-align: right;
+}
+
+
+/* Elementos de Aside */
+
+.videoSuggestions {
+    display: grid;
+    grid-template-areas: "thumbnail texts";
+    grid-template-columns: 32vh auto;
+    grid-template-rows: 5vh 5vh;
+    padding: 10px;
+    min-height: 15vh;
+}
+
+.videoSuggestions:hover {
+    transition-duration: 0.3s;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+}
+
+.thumbnail {
+    grid-area: thumbnail;
+    width: 30vh;
+    height: 15vh;
+    border-radius: 3px;
+}
+
+.videoTitle {
+    width: 60vh;
+    font-size: 2vh;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 32px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.videoViews,
+.videoDate {
+    font-size: 2vh;
+    color: rgb(110, 110, 111);
+}
+
+.videoTitle,
+.videoViews,
+.videoDate {
+    grid-area: texts;
+    grid-row: auto / auto;
+    row-gap: 0;
+}

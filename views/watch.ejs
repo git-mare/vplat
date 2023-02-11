@@ -1,0 +1,60 @@
+<%- include("partials/header")%>
+
+    <body>
+        <div class="playerArea">
+            <%- include("partials/navbar") %>
+
+                <!-- Área do player -->
+                <main class="o-main">
+                    <div class="main-element">
+                        <video src="../<%=watch.playerdir%>" poster="../img/banner-gray.png" type="video/mp4" class="main-element" controls="controls">
+                    </video>
+                    </div>
+
+                </main>
+                <!-- Área de sugestão de vídeos -->
+                <%- include("partials/aside") %>
+
+
+                    <!-- Título, Visualizações e Data de postagem do vídeo -->
+                    <div class="o-video-info">
+                        <div class="video-title">
+                            <%=watch.title%>
+                        </div>
+                        <div class="video-informations">
+                            <%=watch.views%> Visualizações
+                        </div>
+
+                        <div class="video-informations">
+                            Postado em
+                            <%=watch.createdAt%>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Descrição do vídeo -->
+                    <div class="o-video-description">
+                        <div class="video-desc">
+                            <h3>Descrição</h3>
+                            <p>
+                                <%=watch.description%>
+                            </p>
+                            <p class="copyButton">
+                                <button onclick="copyLink()" class="copyButton" id="copyButton"><i class="fa fa-copy" aria-hidden="true"></i></button>
+                                <p id="showMessage"></p>
+                            </p>
+                        </div>
+                    </div>
+        </div>
+
+        <script>
+            function copyLink() {
+                const showMessage = document.getElementById("showMessage")
+                navigator.clipboard.writeText(`localhost:2222/watch/<%=watch.id%>`)
+                showMessage.innerHTML = "Link copiado!"
+            }
+        </script>
+    </body>
+
+    </html>
